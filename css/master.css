@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+	background-color: #f4f7fc;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+	padding: 8px 0px 8px 0px;
+
+	background-color: #ffa500;
+	color: red;
+    font: 16px Verdana, Sans-serif;
+	font-weight: bold;
+    /* overflow:hidden;*/
+}
+
+.contentwrapper {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    margin: 0px;
+	background-color: #f4f7fc;
+}
+
+
+.wtf {
+    display: block;
+    float:none;
+	margin: auto;
+}
+
