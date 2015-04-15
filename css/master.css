@@ -106,17 +106,31 @@ p, li{
 }
 
 .linkButton {
+    padding: 9px;
+
     text-align: center;
     text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+
     border-radius: 6px;
     background-color: #00d8d8;
 }
 
-a:link { color: #000000; text-decoration: none}
-a:visited { color: #000000; text-decoration: none}
-a:active { color: #000000; text-decoration: none}
+a:link {
+    color: #2e2e2e;
+    text-decoration: none
+}
+a:visited {
+    color: #2e2e2e;
+    text-decoration: none
+}
+a:active {
+    color: #2e2e2e;
+    text-decoration: none
+}
 a:hover {
-    color: #000000;
+    color: #2e2e2e;
     text-decoration: none;
     background-color: #00c0c0;
 }
