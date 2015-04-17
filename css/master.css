@@ -76,7 +76,7 @@ hr.nameseperator {
     padding: 10px 15px 10px 15px;
     border-style: solid;
     border-width: 2px;
-    border-color: #00a0a0;
+    border-color: #00b0b0;
     border-radius:2px;
     font-family: 'Roboto', sans-serif;
     background-color: #fbfbfb;
@@ -124,26 +124,60 @@ p, li{
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
+    white-space: nowrap;
 
     border-radius: 6px;
     background-color: #00d8d8;
 }
 
-a:link {
+.linkButton:link {
     color: #2e2e2e;
     text-decoration: none
 }
-a:visited {
+.linkButton:visited {
     color: #2e2e2e;
     text-decoration: none
 }
-a:active {
+.linkButton:active {
     color: #2e2e2e;
     text-decoration: none
 }
-a:hover {
+.linkButton:hover {
     color: #2e2e2e;
     text-decoration: none;
     background-color: #00c0c0;
 }
+
+.projectLink {
+    padding: 9px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-right: 8px;
+
+    border-radius: 6px;
+    background-color: #ffa500;
+}
+
+.projectLink:link {
+    color: #2e2e2e;
+    text-decoration: none
+}
+.projectLink:visited {
+    color: #2e2e2e;
+    text-decoration: none
+}
+.projectLink:active {
+    color: #2e2e2e;
+    text-decoration: none
+}
+.projectLink:hover {
+    color: #2e2e2e;
+    text-decoration: none;
+    background-color: #ffb500;
+}
+
 
