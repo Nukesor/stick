@@ -1,0 +1,3 @@
+# robots.txt für arne.beer
+User-agent: *
+Allow: /
