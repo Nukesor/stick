@@ -9,7 +9,7 @@ body {
 
 .header {
     font-family: 'Roboto', sans-serif, bold;
-    float:right;
+    display: flex;
     padding: 18px 40px 0 0;
 
     width: 100%;
@@ -39,10 +39,10 @@ h1.lastname {
     min-width:300px;
     position: absolute;
     right: 20px;
-    top: -60px;
+    top: -50px;
 }
 
-hr.nameseperator { 
+hr.nameseperator {
     display: block;
     width: 75%;
 
@@ -83,7 +83,7 @@ hr.nameseperator {
     flex: 1 auto;
 }
 
-hr.descriptionseperator { 
+hr.descriptionseperator {
     display: block;
     width: 75%;
 
@@ -91,7 +91,7 @@ hr.descriptionseperator {
 
     border-width: 1px;
     border-color: #00a0a0;
-} 
+}
 
 h1{
     margin: 10px 0 10px 0;
@@ -108,8 +108,9 @@ p, li{
 }
 
 .timePeriod {
-    font-size: 17 px;
+    font-size: 16px;
     font-weight: 500;
+    min-width: 100px;
 }
 
 .jobDescription {
