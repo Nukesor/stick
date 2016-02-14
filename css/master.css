@@ -182,3 +182,36 @@ p, li{
 }
 
 
+.contactList {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.contactDescription {
+    font-weight: 500;
+    font-size: 15;
+}
+
+.contactList {
+    padding-left: 0px;
+}
+
+.contactList a:link {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.contactList a:visited {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.contactList a:hover {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.contactList a:active {
+    color: dodgerblue;
+    text-decoration: none;
+}
