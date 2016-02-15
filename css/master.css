@@ -64,22 +64,19 @@ hr.nameseperator {
     right: 0;
 }
 
-.contentSegment {
+.contentSegment, .equalContentSegment {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    background-color: rgba(42,255,10,0.4);
     margin: 0px;
+}
+
+.contentSegment {
+    align-items: flex-start;
 }
 
 .equalContentSegment {
-    display: flex;
-    flex-direction: row;
     align-items: stretch;
-    margin: 0px;
-}
-
-.contentSegment, .equalContentSegment {
-    background-color: #1DE2AB;
 }
 
 .content {
