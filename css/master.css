@@ -69,7 +69,6 @@ hr.nameseperator {
     flex-direction: row;
     align-items: flex-start;
     margin: 0px;
-    background-color: #00d0d0;
 }
 
 .equalContentSegment {
@@ -77,16 +76,16 @@ hr.nameseperator {
     flex-direction: row;
     align-items: stretch;
     margin: 0px;
-    background-color: #00d0d0;
+}
+
+.contentSegment, .equalContentSegment {
+    background-color: #1DE2AB;
 }
 
 .content {
     margin: 10px 10px 10px 10px;
     padding: 10px 15px 10px 15px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #009090;
-    border-radius:2px;
+    border-radius: 2px;
     font-family: 'Roboto', sans-serif;
     background-color: #fbfbfb;
     flex: 1 auto;
