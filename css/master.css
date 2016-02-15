@@ -14,7 +14,6 @@ body {
     padding: 18px 40px 0 0;
     margin-bottom: 15px;
 
-    width: 100%;
     height: 50px;
 
     background-color: #FF9900;
@@ -26,13 +25,12 @@ body {
 
 h1.firstname {
     margin: 0 0 0 7px;
+    padding-right: 3px;
     float: right;
     color: #E9E9E9;
 }
 
-h1.lastname {
-    margin: 0 0 0 7px;
-    float: right;
+.lastname {
     color: #424242;
 }
 
@@ -70,6 +68,13 @@ hr.nameseperator {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin: 0px;
+}
+
+.equalContentSegment {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
     margin: 0px;
 }
 
