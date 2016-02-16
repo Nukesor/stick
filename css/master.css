@@ -42,16 +42,6 @@ h1.firstname {
     top: -65px;
 }
 
-hr.nameseperator {
-    display: block;
-    width: 75%;
-
-    margin: 15px auto 30px 0;
-
-    border-width: 3px;
-    border-color: black;
-}
-
 .contentWrapper {
     position: absolute;
 	min-width: 740px;
@@ -67,7 +57,7 @@ hr.nameseperator {
 .contentSegment, .equalContentSegment {
     display: flex;
     flex-direction: row;
-    background-color: rgba(92,255,10,0.3);
+    background-color: rgba(255,253,0,0.2);
     margin: 0px;
 }
 
@@ -88,7 +78,7 @@ hr.nameseperator {
     flex: 1 auto;
 }
 
-hr.descriptionseperator {
+hr.descriptionSeperator {
     display: block;
     width: 75%;
 
