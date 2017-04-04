@@ -79,6 +79,10 @@ h1.firstname {
     flex: 1 auto;
 }
 
+#main_text {
+    max-width: 950px;
+}
+
 hr.descriptionSeperator {
     display: block;
     width: 75%;
