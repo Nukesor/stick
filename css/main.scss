@@ -1,0 +1,217 @@
+body {
+    background-image: url('../img/background.png');
+    color: #3e3e3e;
+    font-family: 'Roboto', sans-serif, bold;
+    margin: 0px;
+    width: 100%;
+}
+
+.header {
+    background-color: #FF9900;
+    border-bottom: 5px solid #E07B19;
+    color: #ffffff;
+    display: flex;
+    font-family: 'Roboto', sans-serif, bold;
+    font-weight: bold;
+    height: 42px;
+    margin-bottom: 15px;
+    padding: 18px 40px 0 0;
+    text-align: right;
+}
+
+h1.firstname {
+    color: #F9F9F9;
+    float: right;
+    margin-left: 7px;
+    padding-right: 3px;
+}
+
+.lastname {
+    color: #424242;
+}
+
+.headerName {
+    height:20px;
+    min-width:300px;
+    position: absolute;
+    right: 20px;
+    top: -65px;
+}
+
+.contentWrapper {
+    position: absolute;
+    max-width: 1205px;
+    display: flex;
+    flex-direction: column;
+
+	margin: 0px auto;
+    left: 0;
+    right: 0;
+}
+
+.contentSegment, .equalContentSegment {
+    background-color: rgba(200,200,200,0.25);
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.contentSegment {
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.equalContentSegment {
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
+.content {
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fbfbfb;
+    flex: 1 auto;
+}
+
+#main_text {
+    max-width: 950px;
+}
+
+hr.descriptionSeperator {
+    border-color: #00a0a0;
+    border-width: 1px;
+    display: block;
+    margin: 15px auto 30px 0;
+    width: 75%;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 10px 0 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+
+p, li {
+    font-size: 16px;
+}
+
+.timePeriod {
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.jobDescription {
+    margin: 20px 0 5px;
+    font-weight: 500;
+}
+
+.linkButton {
+    background-color: #00d8d8;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:link {
+        color: #FF9900;
+        text-decoration: none
+    }
+    &:visited {
+        color: #FF9900;
+        text-decoration: none
+    }
+    &:active {
+        color: #FF9900;
+        text-decoration: none
+    }
+    &:hover {
+        background-color: #00cccc;
+        color: #FF9900;
+        text-decoration: none;
+    }
+}
+
+.technologyLink {
+    background-color: #ffa500;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 8px;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+
+.projectLink {
+    background-color: #ffa500;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 8px;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:link {
+        color: #2e2e2e;
+        text-decoration: none
+    }
+    &:visited {
+        color: #2e2e2e;
+        text-decoration: none
+    }
+    &:active {
+        color: #2e2e2e;
+        text-decoration: none
+    }
+    &:hover {
+        background-color: #ffb500;
+        color: #2e2e2e;
+        text-decoration: none;
+    }
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+
+    .contactDescription {
+        font-weight: 500;
+        font-size: 15;
+        margin-right: 20px;
+
+        a {
+            &:link {
+                color: #3299BB;
+                text-decoration: none;
+            }
+            &:visited {
+                color: #3299BB;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: #3299BB;
+                text-decoration: none;
+            }
+
+            &:active {
+                color: #3299BB;
+                text-decoration: none;
+            }
+        }
+    }
+}
