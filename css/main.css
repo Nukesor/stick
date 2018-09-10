@@ -112,7 +112,6 @@ p, li {
 }
 
 .linkButton {
-  background-color: #00d8d8;
   border-radius: 6px;
   font-size: 17px;
   font-weight: 500;
@@ -120,64 +119,14 @@ p, li {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
+  background-color: #ffa500;
 }
-.linkButton:link {
-  color: #FF9900;
-  text-decoration: none;
-}
-.linkButton:visited {
-  color: #FF9900;
-  text-decoration: none;
-}
-.linkButton:active {
-  color: #FF9900;
+.linkButton:link, .linkButton:visited, .linkButton:active, .linkButton:hover {
+  color: #2e2e2e;
   text-decoration: none;
 }
 .linkButton:hover {
-  background-color: #00cccc;
-  color: #FF9900;
-  text-decoration: none;
-}
-
-.technologyLink {
-  background-color: #ffa500;
-  border-radius: 6px;
-  font-size: 17px;
-  font-weight: 500;
-  margin-top: 8px;
-  padding: 9px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.projectLink {
-  background-color: #ffa500;
-  border-radius: 6px;
-  font-size: 17px;
-  font-weight: 500;
-  margin-right: 8px;
-  padding: 9px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.projectLink:link {
-  color: #2e2e2e;
-  text-decoration: none;
-}
-.projectLink:visited {
-  color: #2e2e2e;
-  text-decoration: none;
-}
-.projectLink:active {
-  color: #2e2e2e;
-  text-decoration: none;
-}
-.projectLink:hover {
   background-color: #ffb500;
-  color: #2e2e2e;
-  text-decoration: none;
 }
 
 .contactList {
@@ -189,19 +138,7 @@ p, li {
   font-size: 15;
   margin-right: 20px;
 }
-.contactList .contactDescription a:link {
-  color: #3299BB;
-  text-decoration: none;
-}
-.contactList .contactDescription a:visited {
-  color: #3299BB;
-  text-decoration: none;
-}
-.contactList .contactDescription a:hover {
-  color: #3299BB;
-  text-decoration: none;
-}
-.contactList .contactDescription a:active {
+.contactList .contactDescription a:link, .contactList .contactDescription a:visited, .contactList .contactDescription a:hover, .contactList .contactDescription a:active {
   color: #3299BB;
   text-decoration: none;
 }

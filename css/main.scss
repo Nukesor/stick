@@ -113,7 +113,6 @@ p, li {
 }
 
 .linkButton {
-    background-color: #00d8d8;
     border-radius: 6px;
     font-size: 17px;
     font-weight: 500;
@@ -122,65 +121,17 @@ p, li {
     text-decoration: none;
     white-space: nowrap;
 
-    &:link {
-        color: #FF9900;
-        text-decoration: none
-    }
-    &:visited {
-        color: #FF9900;
-        text-decoration: none
-    }
-    &:active {
-        color: #FF9900;
-        text-decoration: none
-    }
+    background-color: #ffa500;
+
+    &:link,
+    &:visited,
+    &:active,
     &:hover {
-        background-color: #00cccc;
-        color: #FF9900;
-        text-decoration: none;
-    }
-}
-
-.technologyLink {
-    background-color: #ffa500;
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    margin-top: 8px;
-    padding: 9px;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-
-}
-
-.projectLink {
-    background-color: #ffa500;
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    margin-right: 8px;
-    padding: 9px;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-
-    &:link {
-        color: #2e2e2e;
-        text-decoration: none
-    }
-    &:visited {
-        color: #2e2e2e;
-        text-decoration: none
-    }
-    &:active {
         color: #2e2e2e;
         text-decoration: none
     }
     &:hover {
         background-color: #ffb500;
-        color: #2e2e2e;
-        text-decoration: none;
     }
 }
 
@@ -194,20 +145,9 @@ p, li {
         margin-right: 20px;
 
         a {
-            &:link {
-                color: #3299BB;
-                text-decoration: none;
-            }
-            &:visited {
-                color: #3299BB;
-                text-decoration: none;
-            }
-
-            &:hover {
-                color: #3299BB;
-                text-decoration: none;
-            }
-
+            &:link,
+            &:visited,
+            &:hover,
             &:active {
                 color: #3299BB;
                 text-decoration: none;
