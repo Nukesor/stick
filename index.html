@@ -10,13 +10,12 @@
         <meta name="description" content="Arne Beer" />
     </head>
     <body>
-        <div class="header"></div>
-
         <div class="contentWrapper">
+            <div class="headerName">
+                <h1 class="firstname"> Arne Christian <span class="lastname">Beer</span></h1>
+            </div>
+            <div class="header"></div>
             <div class="contentSegment">
-                <div class="headerName">
-                    <h1 class="firstname"> Arne Christian <span class="lastname">Beer</span></h1>
-                </div>
                 <div class="content">
                     <h1> Hi, </h1>
                     <hr class="descriptionSeperator">
@@ -79,6 +78,8 @@
                         <a class="linkButton" href="https://www.php.com/">Php</a>
                     </div>
                 </div>
+           </div>
+            <div class="contentSegment">
                 <div class="content">
                     <h2>Technologies</h2>
                     <div class="content">
@@ -89,27 +90,6 @@
                     </div>
                 </div>
            </div>
-<!--
-    <div class="content">
-        <h2>Software/Services I like using</h2>
-        <ul class="contentList" >
-            <li>Flask</li>
-            <li>Redis</li>
-            <li>Löve2D</li>
-        </ul>
-    </div>
-    <div class="content">
-        <h2>Things I like</h2>
-        <ul class="contentList" >
-            <li>Server Management</li>
-            <li>Writing useful software</li>
-            <li>Game Development</li>
-            <li>Game jams/ONOC</li>
-            <li>Playing the Piano</li>
-        </ul>
-    </div>
-</div>
--->
             <div class="contentSegment">
                 <div class="content">
                     <h2>Employment History</h2>
@@ -117,7 +97,7 @@
                         <tr>
                             <td class="timePeriod">March 2017 – <br> Now</td>
                             <td>
-                                <div class="jobDescription">
+                                <div class="description">
                                     Backend developer and machine learning engineer for the DAA GmbH.<br>
                                 </div>
                                 DAA GmbH helps to assign contrats for
@@ -127,7 +107,7 @@
                         <tr>
                             <td class="timePeriod">March 2016 – <br> November 2016</td>
                             <td>
-                                <div class="jobDescription">
+                                <div class="description">
                                     Backend developer for an art related app. <br>
                                 </div>
                                 Developing, improving and monitoring the full stack of an API backend written in Flask.
@@ -137,7 +117,7 @@
                         <tr>
                             <td class="timePeriod">February 2015 – <br> March 2016</td>
                             <td>
-                                <div class="jobDescription">
+                                <div class="description">
                                     Backend and frontend web developer for SinnerSchrader<br>
                                 </div>
                                 Developing and maintaining code for several projects.
@@ -147,7 +127,7 @@
                         <tr>
                             <td class="timePeriod">May 2014 – <br> October 2014</td>
                             <td>
-                                <div class="jobDescription">
+                                <div class="description">
                                     Research assistant at TI-Online in association with TU-Clausthal
                                 </div>
                                 Frontend web developer for a physical simulation, showing the flow behaviour of water in varying tank systems. The website is part of an e-learing platform and still under developement.
@@ -157,7 +137,7 @@
                         <tr>
                             <td class="timePeriod">October 2013 – <br> March 2014</td>
                             <td>
-                                <div class="jobDescription">
+                                <div class="description">
                                     Research assistant for OLRC in association with UHH
                                 </div>
                                 Backend python developer for OLRC. A platform for online legal resource management, developed for Kenya.
@@ -172,9 +152,9 @@
                     <h2>Private Projects</h2>
                     <table>
                         <tr>
-                            <td><a href="https://github.com/Nukesor/pueue" class="button linkButton"> <i class="fa fa-git-square"></i> Pueue </a></td>
+                            <td><a href="https://github.com/Nukesor/pueue" class="button linkButton"> <i class="fa fa-git-square"></i> Pueue</a></td>
                             <td>
-                                <div class="jobDescription">
+                                <div class="description">
                                     A command queue for shells, written in Python.
                                 </div>
                                 Due to the lack of a nice scheduler for command-line instructions, I decided to make on on my own. <br>
@@ -182,10 +162,30 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="https://github.com/Lovetoys" class="linkButton"> <i class="fa fa-git-square"></i> Lovetoys </a></td>
+                            <td><a href="https://github.com/Nukesor/gitalizer" class="button linkButton"> <i class="fa fa-git-square"></i> Gitalizer</a></td>
                             <td>
-                                <div class="jobDescription">
-                                    A neat Entity Component System framework for game development with lua.
+                                <div class="description">
+                                    The project for my bachelor thesis. Gitalizer is a Git/Github repository meta data aggregator and data mining tool.
+                                </div>
+                                Gitalizer has been created to evaluate the possibility of privacy intrusions through analysis of metadata from open source repositories.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/Nukesor/archivebot" class="button linkButton"> <i class="fa fa-git-square"></i> ArchiveBot</a></td>
+                            <td>
+                                <div class="description">
+                                    A Telegram bot for archiving media from chats and providing the archives to users.
+                                </div>
+                                A handy bot which enables to download files from telegram chats to your server.
+                                It features a full backup of all files posted in a chat and a continuous backup of incoming new media.
+                                A zip archive can then be created and uploaded into the Telegram chat with a single command at any time.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/Lovetoys" class="linkButton"> <i class="fa fa-git-square"></i> Lövetoys </a></td>
+                            <td>
+                                <div class="description">
+                                    Lövetoys is a full-featured Entity Component System framework for game development with lua.
                                 </div>
                                 This is a project that grew over the past few years. It began as a simple piece of code in one of my games and became a stable library with 100% test coverage. If you are up to game development and interested in using a handy ECS, check out the project and give it a try.
                             </td>
@@ -193,7 +193,7 @@
                         <tr>
                             <td><a href="https://github.com/Nukesor/Encarne" class="linkButton"> <i class="fa fa-git-square"></i> Encarne </a></td>
                             <td>
-                                <div class="jobDescription">
+                                <div class="description">
                                     A project for automatic h.265 encoding of all video containers in a specified directory.
                                 </div>
                                 A small program which scans all video container in a specified directory and re-encodes them to using the new x265 algorithm. <br>
