@@ -1,5 +1,6 @@
 $white: rgb(251,251,251);
 $dark-grey: rgb(67,77,83);
+$grey: rgb(200,200,200);
 $cyan : rgb(167,219,216);
 $blue: rgb(105, 210, 231);
 $green: rgb(184, 233, 148);
@@ -97,12 +98,11 @@ h1.firstname {
     flex-basis: 45%;
     margin: 0 0 20px 20px;
 
-    border-left: 2px solid rgba(200,200,200,0.5);
+    border-left: 2px solid rgba($grey ,0.5);
     padding-left: 15px;
 }
 
-
-#main_text {
+.main_text {
     max-width: 950px;
 }
 
@@ -190,4 +190,10 @@ td {
             }
         }
     }
+}
+
+.endDelimiter {
+    border-bottom: 2px solid $grey;
+    height: 2px;
+    margin: 50px 11px 180px 11px;
 }

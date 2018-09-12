@@ -79,7 +79,7 @@ h1.firstname {
   padding-left: 15px;
 }
 
-#main_text {
+.main_text {
   max-width: 950px;
 }
 
@@ -155,6 +155,12 @@ td {
 .contactList .contactDescription a:link, .contactList .contactDescription a:visited, .contactList .contactDescription a:hover, .contactList .contactDescription a:active {
   color: #3e3e3e;
   text-decoration: none;
+}
+
+.endDelimiter {
+  border-bottom: 2px solid #c8c8c8;
+  height: 2px;
+  margin: 50px 11px 180px 11px;
 }
 
 /*# sourceMappingURL=css/main.css.map */
