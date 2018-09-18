@@ -25,18 +25,12 @@ body {
 
 .header {
     border-bottom: 5px solid $header;
-    margin: 0 11px 10px 11px;
+    margin: 0 13px 10px 13px;
 }
 
 h1.firstname {
     color: $dark-grey;
-    float: right;
-    margin-left: 7px;
-    padding-right: 3px;
-}
-
-.lastname {
-    color: $dark-grey;
+    margin-left: 14px;
 }
 
 .headerName {

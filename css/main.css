@@ -10,18 +10,12 @@ body {
 
 .header {
   border-bottom: 5px solid rgba(250, 152, 58, 0.7);
-  margin: 0 11px 10px 11px;
+  margin: 0 13px 10px 13px;
 }
 
 h1.firstname {
   color: #434d53;
-  float: right;
-  margin-left: 7px;
-  padding-right: 3px;
-}
-
-.lastname {
-  color: #434d53;
+  margin-left: 14px;
 }
 
 .headerName {
