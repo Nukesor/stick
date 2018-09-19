@@ -75,8 +75,59 @@ h1.firstname {
 }
 @media screen and (max-width: 820px) {
   .content {
-    margin: 10px 5px;
-    padding: 10px 10px;
+    margin: 10px 5px 10px 10px;
+    padding: 10px 10px 10px 15px;
+  }
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+@media screen and (max-width: 820px) {
+  .projectContainer {
+    flex-shrink: 1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.projectContainer .linkContainer,
+.projectContainer .timePeriod {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 140px;
+}
+.projectContainer .timePeriod {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 820px) {
+  .projectContainer .timePeriod {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+}
+.projectContainer .linkButton {
+  align-self: flex-start;
+}
+@media screen and (max-width: 820px) {
+  .projectContainer .linkButton {
+    margin-bottom: 20px;
+  }
+}
+
+.projectDelimiter {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 70px;
+}
+@media screen and (max-width: 820px) {
+  .projectDelimiter {
+    margin: 0 30px 20px 30px;
   }
 }
 
@@ -143,20 +194,26 @@ td {
 }
 
 .description {
-  margin: 0 0 5px;
+  margin: 0 0 15px;
   font-weight: 500;
+}
+@media screen and (max-width: 820px) {
+  .description {
+    text-align: center;
+  }
 }
 
 .linkButton {
+  background-color: rgba(250, 152, 58, 0.9);
   border-radius: 5px;
+  display: inline-block;
   font-size: 17px;
   font-weight: 500;
+  margin: 4px 10px 0 0;
   padding: 7px 9px;
-  margin-right: 10px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  background-color: rgba(250, 152, 58, 0.9);
 }
 .linkButton:link, .linkButton:visited, .linkButton:active, .linkButton:hover {
   color: #32325a;
@@ -181,8 +238,7 @@ td {
 }
 
 .endDelimiter {
-  border-bottom: 2px solid #c8c8c8;
-  height: 2px;
+  border: 1px solid #c8c8c8;
   margin: 35px 11px 90px 11px;
 }
 
