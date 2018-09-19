@@ -1,13 +1,14 @@
 $white: rgb(251, 251, 251);
 $dark-grey: rgb(67, 77, 83);
 $grey: rgb(200, 200, 200);
-$cyan : rgb(167, 219, 216);
+$red: rgb(183, 21, 64);
 $orange: rgb(250, 152, 58);
 $hover-orange: rgb(240, 168, 48);
-$red: rgb(183, 21, 64);
+$cyan : rgb(167, 219, 216);
 
-$button-font-color: rgb(50, 50, 90);
 $header-color: rgba($orange, 0.7);
+$button-color: rgba($orange, 0.9);
+$button-font-color: rgb(50, 50, 90);
 
 $break-medium: 820px;
 
@@ -38,18 +39,14 @@ h1.firstname {
 
 .borderWrapper {
     border-radius: 2px;
+    border: 2px solid rgb(055, 055, 055);
+    background-color: rgb(055, 055, 055);
+    max-width: 1245px;
     padding: 10px;
 
-    &#wrapper1 {
-        max-width: 1245px;
+    @media screen and (max-width: $break-medium) {
+        padding: 5px;
         border: 2px solid rgb(055, 055, 055);
-        background-color: rgb(055, 055, 055);
-    }
-
-    &#wrapper2 {
-        max-width: 1225px;
-        border: 2px solid rgb(230, 230, 230);
-        background-color: rgb(230, 230, 230);
     }
 }
 
@@ -90,6 +87,10 @@ h1.firstname {
     background-color: white;
     flex: 1 auto;
 
+    @media screen and (max-width: $break-medium) {
+        margin: 10px 5px;
+        padding: 10px 10px;
+    }
 }
 
 .skillsContentWrapper {
@@ -171,7 +172,7 @@ td {
     text-decoration: none;
     white-space: nowrap;
 
-    background-color: $orange;
+    background-color: $button-color;
 
     &:link,
     &:visited,
