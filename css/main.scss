@@ -2,16 +2,14 @@ $white: rgb(251,251,251);
 $dark-grey: rgb(67,77,83);
 $grey: rgb(200,200,200);
 $cyan : rgb(167,219,216);
-
 $orange: rgb(250, 152, 58);
 $hover-orange: rgb(240, 168, 48);
 $red: rgb(183, 21, 64);
 
-//$content-background: rgb(255, 250, 245);
-$content-background: $white;
-$header: rgba($orange, 0.7);
 $button-font-color: #3e3e3e;
+$header-color: rgba($orange, 0.7);
 
+$break-medium: 820px;
 
 body {
     color: #3e3e3e;
@@ -24,7 +22,7 @@ body {
 }
 
 .header {
-    border-bottom: 5px solid $header;
+    border-bottom: 5px solid $header-color;
     margin: 0 13px 10px 13px;
 }
 
@@ -82,7 +80,7 @@ h1.firstname {
     margin: 10px;
     padding: 10px 15px 20px 20px;
     font-family: 'Roboto', sans-serif;
-    background-color: $content-background;
+    background-color: white;
     flex: 1 auto;
 
 }
@@ -105,6 +103,10 @@ h1.firstname {
 
     border-left: 2px solid rgba($grey ,0.5);
     padding-left: 15px;
+
+    @media screen and (max-width: $break-medium) {
+        flex-basis: 100%;
+    }
 }
 
 .main_text {

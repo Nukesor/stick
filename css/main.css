@@ -64,7 +64,7 @@ h1.firstname {
   margin: 10px;
   padding: 10px 15px 20px 20px;
   font-family: "Roboto", sans-serif;
-  background-color: #fbfbfb;
+  background-color: white;
   flex: 1 auto;
 }
 
@@ -83,6 +83,11 @@ h1.firstname {
   margin: 0 0 20px 20px;
   border-left: 2px solid rgba(200, 200, 200, 0.5);
   padding-left: 15px;
+}
+@media screen and (max-width: 820px) {
+  .skillsContent {
+    flex-basis: 100%;
+  }
 }
 
 .main_text {
