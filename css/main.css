@@ -24,11 +24,18 @@ h1.firstname {
 }
 
 .borderWrapper {
-  border-radius: 1px;
-  box-shadow: 0 0px 0 10px #e6e6e6, 0 0px 0 20px #323232;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  max-width: 1205px;
+  border-radius: 2px;
+  padding: 10px;
+}
+.borderWrapper#wrapper1 {
+  max-width: 1245px;
+  border: 2px solid #323232;
+  background-color: #323232;
+}
+.borderWrapper#wrapper2 {
+  max-width: 1225px;
+  border: 2px solid #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .contentWrapper {

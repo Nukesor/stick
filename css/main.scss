@@ -37,13 +37,20 @@ h1.firstname {
 }
 
 .borderWrapper {
-    border-radius: 1px;
-    box-shadow:
-        0 0px 0 10px rgb(230, 230, 230),
-        0 0px 0 20px rgb(050, 050, 050);
-    margin-bottom: 20px;
-    margin-top: 20px;
-    max-width: 1205px;
+    border-radius: 2px;
+    padding: 10px;
+
+    &#wrapper1 {
+        max-width: 1245px;
+        border: 2px solid rgb(050, 050, 050);
+        background-color: rgb(050, 050, 050);
+    }
+
+    &#wrapper2 {
+        max-width: 1225px;
+        border: 2px solid rgb(230, 230, 230);
+        background-color: rgb(230, 230, 230);
+    }
 }
 
 .contentWrapper {
