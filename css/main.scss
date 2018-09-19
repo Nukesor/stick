@@ -213,9 +213,13 @@ td {
 .description {
     margin: 0 0 15px;
     font-weight: 500;
+}
 
-    @media screen and (max-width: $break-small) {
-        text-align: center;
+.descriptionContainer {
+    .description {
+        @media screen and (max-width: $break-small) {
+            text-align: center;
+        }
     }
 }
 
