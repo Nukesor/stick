@@ -1,12 +1,12 @@
-$white: rgb(251,251,251);
-$dark-grey: rgb(67,77,83);
-$grey: rgb(200,200,200);
-$cyan : rgb(167,219,216);
+$white: rgb(251, 251, 251);
+$dark-grey: rgb(67, 77, 83);
+$grey: rgb(200, 200, 200);
+$cyan : rgb(167, 219, 216);
 $orange: rgb(250, 152, 58);
 $hover-orange: rgb(240, 168, 48);
 $red: rgb(183, 21, 64);
 
-$button-font-color: #3e3e3e;
+$button-font-color: rgb(50, 50, 90);
 $header-color: rgba($orange, 0.7);
 
 $break-medium: 820px;
@@ -42,8 +42,8 @@ h1.firstname {
 
     &#wrapper1 {
         max-width: 1245px;
-        border: 2px solid rgb(050, 050, 050);
-        background-color: rgb(050, 050, 050);
+        border: 2px solid rgb(055, 055, 055);
+        background-color: rgb(055, 055, 055);
     }
 
     &#wrapper2 {
@@ -162,10 +162,10 @@ td {
 }
 
 .linkButton {
-    border-radius: 6px;
+    border-radius: 5px;
     font-size: 17px;
     font-weight: 500;
-    padding: 9px;
+    padding: 7px 9px;
     margin-right: 10px;
     text-align: center;
     text-decoration: none;

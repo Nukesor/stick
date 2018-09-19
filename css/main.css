@@ -29,8 +29,8 @@ h1.firstname {
 }
 .borderWrapper#wrapper1 {
   max-width: 1245px;
-  border: 2px solid #323232;
-  background-color: #323232;
+  border: 2px solid #373737;
+  background-color: #373737;
 }
 .borderWrapper#wrapper2 {
   max-width: 1225px;
@@ -143,10 +143,10 @@ td {
 }
 
 .linkButton {
-  border-radius: 6px;
+  border-radius: 5px;
   font-size: 17px;
   font-weight: 500;
-  padding: 9px;
+  padding: 7px 9px;
   margin-right: 10px;
   text-align: center;
   text-decoration: none;
@@ -154,7 +154,7 @@ td {
   background-color: #fa983a;
 }
 .linkButton:link, .linkButton:visited, .linkButton:active, .linkButton:hover {
-  color: #3e3e3e;
+  color: #32325a;
   text-decoration: none;
 }
 .linkButton:hover {
@@ -171,7 +171,7 @@ td {
   margin-right: 20px;
 }
 .contactList .contactDescription a:link, .contactList .contactDescription a:visited, .contactList .contactDescription a:hover, .contactList .contactDescription a:active {
-  color: #3e3e3e;
+  color: #32325a;
   text-decoration: none;
 }
 
