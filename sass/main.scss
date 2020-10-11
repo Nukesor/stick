@@ -94,7 +94,7 @@ h1.firstname {
     }
 }
 
-.projectContainer {
+.project {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -108,7 +108,7 @@ h1.firstname {
     }
 
 
-    .linkContainer,
+    .projectLink,
     .timePeriod {
         display: flex;
         justify-content: center;
@@ -132,6 +132,12 @@ h1.firstname {
 
         @media screen and (max-width: $break-small) {
             margin-bottom: 20px;
+        }
+    }
+
+    .description {
+        @media screen and (max-width: $break-small) {
+            text-align: center;
         }
     }
 }
@@ -215,13 +221,7 @@ td {
     font-weight: 500;
 }
 
-.descriptionContainer {
-    .description {
-        @media screen and (max-width: $break-small) {
-            text-align: center;
-        }
-    }
-}
+
 
 .linkButton {
     background-color: $button-color;
@@ -247,11 +247,11 @@ td {
     }
 }
 
-.contactList {
+.contact {
     display: flex;
     flex-direction: column;
 
-    .contactDescription {
+    .contactElement {
         font-weight: 500;
         font-size: 15;
         margin-right: 20px;

@@ -1,0 +1,147 @@
++++
+title = "Arne Beer"
+description = "Homepage and CV"
+
+# Template to use to render this section page
+template = "index.html"
+
+[extra]
+    [extra.skills]
+        "General Development and Operations" = [
+            { name = "NeoVim"},
+            { name = "Git"},
+            { name = "Ansible"},
+            { name = "Docker"},
+            { name = "Arch Linux"},
+        ]
+        "Python" = [
+            { name = "SqlAlchemy", usages = "PostgreSQL, SQLite" },
+            { name = "Flask + Ecosystem"},
+            { name = "Telegram bots", usages = "Telethon, Python-telegram-bot" },
+        ]
+        "Rust" = [
+            { name = "Various CLI libraries"},
+            { name = "Actix-web"},
+            { name = "Diesel", usages = "PostgreSQL, SQLite" },
+        ]
+        "Frontend" = [
+            { name = "Typescript", usages = "Vue" },
+            { name = "Basic CSS3"},
+            { name = "Basic HTML5"},
+        ]
+        "Php" = [
+            { name = "Symfony + Ecosystem"},
+            { name = "Doctrine", usages = "MySQL"},
+        ]
+
+    [extra.jobs]
+        [extra.jobs.daa]
+            from = "March 2017"
+            to = "Now"
+            name = "Senior DevOps Engineer for DAA GmbH"
+            description = '''
+                Deutsche Auftragsagentur GmbH is a lead provider for specialized companies.
+                My job is to manage their whole cluster infrastructure and to work with the full stack of several PHP web applications.
+            '''
+
+        [extra.jobs.freelance]
+            from = "March 2016"
+            to = "November 2016"
+            name = "Back-end developer for an art related app"
+            description = "Maintenance of a large existing code base, debugging of critical legacy bugs and development of new features in the full stack of an API back-end written in Python's Flask web-framework."
+
+        [extra.jobs.sinnerschrader]
+            from = "February 2015"
+            to = "March 2016"
+            name = "Back-end and front-end web developer for SinnerSchrader"
+            description = "Maintenance and development of features and prototypes for several of their projects including customers such as Comdirect, VW and others."
+
+        [extra.jobs.ti_online]
+            from = "May 2014"
+            to = "October 2014"
+            name = "Research assistant at TI-Online in association with TU-Clausthal"
+            description = "Front-end web developer for a physical simulation, showing the flow behaviour of water in varying tank systems. The website was part of an e-learing platform."
+
+        [extra.jobs.olrc]
+            from = "October 2013"
+            to = "March 2014"
+            name = "Research assistant for OLRC in association with UHH"
+            description = "Back-end Python developer for OLRC. A platform for online legal resource management developed for Kenya. Unfortunately the funding for the project has stopped."
+
+    [extra.projects]
+        [extra.projects.pueue]
+            name = "Pueue"
+            link = "https://github.com/Nukesor/pueue"
+            short_description = 'Manage your shell commands [rust, tool, cli]'
+            description = '''
+                A neat cli tool to manage long running shell commands.
+                It's basically a daemon, which executes shell commands in the background, allowing you to simply continue on your shell no matter how long that command takes.
+                Pueue comes with a lot of convenience features, such as a command queue, parallel tasks, multiple queues, notifications and more.
+            '''
+
+        [extra.projects.pollbot]
+            name = "Ultimate <br> Pollbot"
+            link = "https://github.com/Nukesor/ultimate-poll-bot"
+            short_description = 'Create polls and surveys inside of Telegram [python, tool, telegram]'
+            description = '''
+                A powerful Telegram bot, which allows you to create polls to your liking.
+                It features a rich management interface and allows you to easily share polls between many chats.
+                <br>
+                I'm hosting a free version, which is already used by more than half a million people.
+            '''
+
+        [extra.projects.comfy_table]
+            name = "Comfy table"
+            link = "https://github.com/Nukesor/comfy-table"
+            short_description = 'Beatiful and simple tables on your terminal [rust, library, cli]'
+            description = '''
+                Comfy-table is a minimalistic Rust library to build beautiful terminal tables.
+                It's main unique feature is it's ability to dynamically wrap to the length of a given terminal.
+
+                Comfy-table is considered stable, well documented and has about 95% test coverage, which includes property testing.
+            '''
+
+        [extra.projects.stickerfinder]
+            name = "Sticker <br> Finder"
+            link = "https://github.com/Nukesor/sticker-finder"
+            short_description = 'A Telegram bot for querying, tagging and discovering new stickers [python, tool, telegram]'
+            description = '''
+                Since there existed no nice text search for stickers I decided to create an easy to use and practical sticker bot.
+                <br>
+                It features a full sticker search by tags, text, emoji and sticker set name/title, as well as OCR with tesseract for text detection.
+                All Users can discover new sets, add new ones and contribute by tagging untagged stickers.
+                It also includes multi-language support, fuzzy search and is build with python-telegram-bot, SqlAlchemy and PostgreSQL as database solution.
+            '''
+
+        [extra.projects.lovetoys]
+            name = "Lövetoys"
+            link = "https://github.com/Lovetoys/lovetoys"
+            short_description = 'A full-featured entity-component-system framework in Lua. [lua, library, gamedev]'
+            description = '''
+                This is a project that grew over the past few years.
+                It began as a simple piece of code in one of our games and became a stable library with 100% test coverage.
+                If you are up to game development with Lua and interested in using a handy ECS, check out the project and give it a try.
+            '''
+
+        [extra.projects.gitalizer]
+            name = "Gitalizer"
+            link = "https://github.com/Nukesor/gitalizer"
+            short_description = "A Git repository meta-data aggregator and data mining tool [python, tool, privacy]"
+            description = '''
+                This project has been created for my bachelor thesis.
+                Gitalizer is a tool to evaluate the possibility of privacy intrusions through analysis of metadata from open source repositories.
+            '''
+
+        [extra.projects.archivebot]
+            name = "Archivebot"
+            link = "https://github.com/Nukesor/archivebot"
+            short_description = "A bot for archiving media from chats inside of Telegram [python, tool, telegram]"
+            description = '''
+                A handy bot to download files from telegram chats to your server.
+                It features a full backup of all files posted in a chat and a continuous backup of incoming new media.
+                A zip archive can then be created and uploaded into the Telegram chat with a single command at any given time.
+            '''
+
++++
+
+
