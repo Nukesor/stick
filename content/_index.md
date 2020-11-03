@@ -37,7 +37,7 @@ template = "index.html"
         [extra.jobs.daa]
             from = "March 2017"
             to = "Now"
-            name = "Senior DevOps Engineer for DAA GmbH"
+            name = "Senior DevOps Software Engineer for DAA GmbH"
             description = '''
                 Deutsche Auftragsagentur GmbH is a lead provider for specialized companies.
                 My job is to manage their whole cluster infrastructure and to work with the full stack of several PHP web applications.
