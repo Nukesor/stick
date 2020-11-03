@@ -75,6 +75,8 @@ template = "index.html"
             description = '''
                 A neat cli tool to manage long running shell commands.
                 It's basically a daemon, which executes shell commands in the background, allowing you to simply continue on your shell no matter how long that command takes.
+                <br>
+                <br>
                 Pueue comes with a lot of convenience features, such as a command queue, parallel tasks, multiple queues, notifications and more.
             '''
 
@@ -86,6 +88,7 @@ template = "index.html"
                 A powerful Telegram bot, which allows you to create polls to your liking.
                 It features a rich management interface and allows you to easily share polls between many chats.
                 <br>
+                <br>
                 I'm hosting a free version, which is already used by more than half a million people.
             '''
 
@@ -96,7 +99,7 @@ template = "index.html"
             description = '''
                 Comfy-table is a minimalistic Rust library to build beautiful terminal tables.
                 It's main unique feature is it's ability to dynamically wrap to the length of a given terminal.
-
+                <br>
                 Comfy-table is considered stable, well documented and has about 95% test coverage, which includes property testing.
             '''
 
@@ -109,6 +112,7 @@ template = "index.html"
                 <br>
                 It features a full sticker search by tags, text, emoji and sticker set name/title, as well as OCR with tesseract for text detection.
                 All Users can discover new sets, add new ones and contribute by tagging untagged stickers.
+                <br>
                 It also includes multi-language support, fuzzy search and is build with python-telegram-bot, SqlAlchemy and PostgreSQL as database solution.
             '''
 
