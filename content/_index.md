@@ -157,20 +157,20 @@ Hi! My name is Arne Beer.
 If you would ask me what I like doing most, my answer would probably be something like "Programming cool and useful stuff".
 
 Automation, optimization, neat setups and useful tools always fascinated me.
-There's something incredibly satisfying in building stuff, that reduces one's workload and helps optimizing some process.
+There's something incredibly satisfying in building something, that reduces one's workload or helps optimizing some process.
 Extra points for daemons and services that just work without any maintenance!
 
-That's probably one of the main reasons, why I also love contributing to open-source.
-Tools and libraries you've written get used and improved by other people, while you get a chance to use and contribute back yourself.
-On top of that, it's a great feeling to see one of your projects being appreciated by like-minded people.
+That's probably one of the main reasons why I love open-source.
+Your own tools and libraries get used and improved by other people, while you get a chance to use and give back yourself.
+On top of that, it's a great feeling to see your projects being appreciated by like-minded people.
 
-Professionally I work as a software enginner and DevOps guy since more than 5 years, always in an web-service environment.
-During that time I really learned to appreciate a good team.
-It just makes work much more productive, enjoyable and, on top of that, the quality of our work usually gets a lot better as well.
+Professionally I work as a software engineer and DevOps guy since more than 5 years, always on web related projects.
+During that time I learned to really appreciate a good team dynamic.
+It just makes work much more productive, enjoyable and the quality of each individual's work usually gets a lot better as well.
 It's something I don't want to miss in the future.
 
-I'm really interested in new technologies!
-For one, I'm very fascinated by Rust and its rapidly developing ecosystem.
+I'm very interested in new technologies!
+For one, I'm fascinated by Rust and its rapidly developing ecosystem.
 Professionally working with a Rust tech stack is something that's planned for the near future!
 
 Well, I think that's enough of me for now.
