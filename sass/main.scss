@@ -1,14 +1,7 @@
-$white: rgb(251, 251, 251);
-$dark-grey: rgb(67, 77, 83);
-$grey: rgb(200, 200, 200);
-$red: rgb(183, 21, 64);
-$orange: rgb(250, 152, 58);
-$hover-orange: rgb(240, 168, 48);
-$cyan : rgb(167, 219, 216);
+@import "colors";
+@import "mixins";
+@import "variables";
 
-$header-color: rgba($orange, 0.7);
-$button-color: rgba($orange, 0.9);
-$button-font-color: rgb(50, 50, 90);
 
 $break-medium: 820px;
 $break-small: $break-medium;
@@ -40,14 +33,13 @@ h1.firstname {
 
 .borderWrapper {
     border-radius: 2px;
-    border: 2px solid rgb(055, 055, 055);
     background-color: rgb(055, 055, 055);
-    max-width: 1245px;
-    padding: 10px;
+    max-width: 1024px;
+    padding: 5px;
+    border: 2px solid rgb(055, 055, 055);
 
-    @media screen and (max-width: $break-medium) {
-        padding: 5px;
-        border: 2px solid rgb(055, 055, 055);
+    @include tablet-desktop {
+        padding: 10px;
     }
 }
 
@@ -82,29 +74,31 @@ h1.firstname {
 .content {
     border: 2px solid rgba($cyan, 0.8);
     border-radius: 2px;
-    margin: 10px;
-    padding: 10px 15px 20px 20px;
+    margin: 10px 5px 10px 10px;
+    padding: 10px 10px 10px 15px;
     font-family: 'Roboto', sans-serif;
     background-color: white;
     flex: 1 auto;
 
-    @media screen and (max-width: $break-medium) {
-        margin: 10px 5px 10px 10px;
-        padding: 10px 10px 10px 15px;
+    @include tablet-desktop {
+        margin: 10px;
+        padding: 10px 15px 20px 20px;
     }
 }
 
 .project {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
     margin: 20px 0;
 
-    @media screen and (max-width: $break-small) {
-        flex-shrink: 1;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    @include tablet-desktop {
+        align-items: left;
+        flex-shrink: 0;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
 
@@ -118,36 +112,46 @@ h1.firstname {
 
     .timePeriod {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        margin-bottom: 10px;
+        width: 100%;
 
-        @media screen and (max-width: $break-small) {
-            width: 100%;
-            flex-direction: row;
-            margin-bottom: 10px;
+        @include tablet-desktop {
+            width: auto;
+            flex-direction: column;
+            margin-bottom: 0px;
         }
     }
 
     .linkButton  {
         align-self: flex-start;
+        margin-bottom: 20px;
 
-        @media screen and (max-width: $break-small) {
-            margin-bottom: 20px;
+        @include tablet-desktop {
+            margin-bottom: 0px;
         }
     }
 
     .description {
-        @media screen and (max-width: $break-small) {
-            text-align: center;
+        text-align: center;
+        @include tablet-desktop {
+            text-align: left;
+        }
+    }
+
+    .projectText {
+        @include tablet-desktop {
+            max-width: 80%;
         }
     }
 }
 
 .projectDelimiter {
-     border: 1px solid rgba(0, 0, 0, 0.2);
-     margin: 0 70px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 30px 20px 30px;
 
-    @media screen and (max-width: $break-small) {
-        margin: 0 30px 20px 30px;
+    @include tablet-desktop {
+        margin: 0 70px;
     }
 
 }
@@ -165,14 +169,14 @@ h1.firstname {
 }
 
 .skillsContent {
-    flex-basis: 45%;
+    flex-basis: 100%;
     margin: 0 0 20px 20px;
 
     border-left: 2px solid rgba($grey ,0.5);
     padding-left: 15px;
 
-    @media screen and (max-width: $break-small) {
-        flex-basis: 100%;
+    @include tablet-desktop {
+        flex-basis: 45%;
     }
 }
 

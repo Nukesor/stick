@@ -90,7 +90,9 @@
                                 <div class="description">
                                     {{ job.name }}<br>
                                 </div>
-                                {{ job.description }}<br>
+                                <div class="projectText">
+                                    {{ job.description }}<br>
+                                </div>
                             </div>
                         </div>
                         <hr class="projectDelimiter">
@@ -109,7 +111,9 @@
                                 <div class="description">
                                     {{ project.short_description | safe }}
                                 </div>
-                                {{ project.description }}
+                                <div class="projectText">
+                                    {{ project.description | safe }}
+                                </div>
                             </div>
                         </div>
                         <hr class="projectDelimiter">

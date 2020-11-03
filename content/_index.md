@@ -8,11 +8,10 @@ template = "index.html"
 [extra]
     [extra.skills]
         "General Development and Operations" = [
-            { name = "NeoVim"},
             { name = "Git"},
             { name = "Ansible"},
             { name = "Docker"},
-            { name = "Arch Linux"},
+            { name = "Linux (I use Arch btw.)"},
         ]
         "Python" = [
             { name = "SqlAlchemy", usages = "PostgreSQL, SQLite" },
@@ -158,14 +157,15 @@ There's something incredibly satisfying in building stuff, that reduces one's wo
 Extra points for daemons and services that just work without any maintenance!
 
 That's probably one of the main reasons, why I also love contributing to open-source.
-Tools and libraries you've written get used and improved by other people, while you get a chance to pay them back by contributing yourself.
-On top of that, it's a great feeling to see one of your projects being used and appreciated by like-minded people.
+Tools and libraries you've written get used and improved by other people, while you get a chance to use and contribute back yourself.
+On top of that, it's a great feeling to see one of your projects being appreciated by like-minded people.
 
 Professionally I work as a software enginner and DevOps guy since more than 5 years, always in an web-service environment.
 During that time I really learned to appreciate a good team.
 It just makes work much more productive, enjoyable and, on top of that, the quality of our work usually gets a lot better as well.
+It's something I don't want to miss in the future.
 
-I'm really interested in new technologies, though.
+I'm really interested in new technologies!
 For one, I'm very fascinated by Rust and its rapidly developing ecosystem.
 Professionally working with a Rust tech stack is something that's planned for the near future!
 
