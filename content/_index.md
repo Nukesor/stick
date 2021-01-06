@@ -11,6 +11,7 @@ template = "index.html"
             { name = "Git"},
             { name = "Ansible"},
             { name = "Docker"},
+            { name = "Vagrant"},
             { name = "Linux (I use Arch btw.)"},
         ]
         "Python" = [
@@ -147,25 +148,26 @@ template = "index.html"
 
 +++
 
-Writing an introduction text about yourself is an incredibly difficult thing to do.
-One doesn't want to appear arrogant, but at the same time you want to present yourself as good as possible, while sticking to the truth.
-
-Okay, let's start this over again.
-
 Hi! My name is Arne Beer.
 
 If you would ask me what I like doing most, my answer would probably be something like "Programming cool and useful stuff".
 
 Automation, optimization, neat setups and useful tools always fascinated me.
-There's something incredibly satisfying in building something, that reduces one's workload or helps optimizing some process.
+There's something incredibly satisfying in building something, that reduces one's workload and helps optimizing some process.
 Extra points for daemons and services that just work without any maintenance!
+In general, working with good tools is a always a pleasure.
 
 That's probably one of the main reasons why I love open-source.
-Your own tools and libraries get used and improved by other people, while you get a chance to use and give back yourself.
-On top of that, it's a great feeling to see your projects being appreciated by like-minded people.
+Your own tools and libraries get used and improved by other people, while you get a chance to use their work and to contribute to other awesome projects.
+On top of that, it's a great feeling to see your projects being used by like-minded people.
 
-Professionally I work as a software engineer and DevOps guy since more than 5 years, always on web related projects.
-During that time I learned to really appreciate a good team dynamic.
+Professionally I work as a software engineer since more than 5 years, almost always on web related projects.
+My usual field of expertise includes normal app development, DevOps and Sysadmin.
+I'm not a big fan of only doing one of those, which is why I'm usually involved in all three wherever I work.
+Working on Servers and Pipelines is something I enjoy very much.
+However, doing some plain old feature-building can also be quite relaxing after a few days of DevOps work.
+
+During my previous jobs I learned to really appreciate a good team dynamic.
 It just makes work much more productive, enjoyable and the quality of each individual's work usually gets a lot better as well.
 It's something I don't want to miss in the future.
 
