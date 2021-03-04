@@ -4,11 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
 
-        {% block css %}
-            <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) | safe }}">
-            <link href='{{ get_url(path="font-awesome.min.css") }}' type='text/css' rel="stylesheet">
-            <link href='//fonts.googleapis.com/css?family=Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
-        {% endblock css %}
+        <link rel="preload" type='text/css' href='{{ get_url(path="fonts/fontawesome-webfont.woff2", cachebust=true) }}'>
+        <link rel="stylesheet" type='text/css' href="{{ get_url(path="main.css", cachebust=true) | safe }}">
+        <link rel="stylesheet" type='text/css' href='{{ get_url(path="font-awesome.min.css", cachebust=true) }}'>
+        <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Roboto:500,400&display=swap'>
     </head>
     <body>
         <div class="borderWrapper">
