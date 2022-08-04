@@ -8,26 +8,28 @@ template = "index.html"
 [extra]
     [extra.skills]
         "General Development and Operations" = [
-            { name = "Git"},
-            { name = "Ansible"},
-            { name = "Docker"},
-            { name = "Vagrant"},
-            { name = "Linux (I use Arch btw.)"},
+            { name = "Git" },
+            { name = "Ansible" },
+            { name = "Podman, Docker, Builderd" },
+            { name = "Nomad, Terraform, Consul" },
+            { name = "Linux (I use Arch btw.)" },
         ]
         "Python" = [
             { name = "SqlAlchemy", usages = "PostgreSQL, SQLite" },
-            { name = "Flask + Ecosystem"},
+            { name = "Flask + Ecosystem" },
             { name = "Telegram bots", usages = "Telethon, Python-telegram-bot" },
+            { name = "Various self-build projects", usages = "Ultimate pollbot, Stickerfinder, Gitalizer, ..." },
         ]
         "Rust" = [
-            { name = "Various CLI libraries"},
-            { name = "Actix-web"},
-            { name = "Diesel", usages = "PostgreSQL, SQLite" },
+            { name = "Rocket & Actix-web" },
+            { name = "SQLx", usages = "PostgreSQL" },
+            { name = "Various self-build projects", usages = "Pueue, comfy-table, inter-struct, ..." },
         ]
         "Frontend" = [
-            { name = "Typescript", usages = "Vue" },
-            { name = "Basic CSS3"},
-            { name = "Basic HTML5"},
+            { name = "React" },
+            { name = "Vue" },
+            { name = "Basic CSS3" },
+            { name = "Basic HTML5" },
         ]
         "Php" = [
             { name = "Symfony + Ecosystem"},
@@ -35,16 +37,22 @@ template = "index.html"
         ]
 
     [extra.jobs]
+        [extra.jobs.freelance]
+            from = "August 2021"
+            to = "Now"
+            name = "Freelance."
+            description = "Consulting work for various clients. Focus on software architecture."
+
         [extra.jobs.daa]
             from = "March 2017"
-            to = "Now"
+            to = "July 2021"
             name = "Senior DevOps Software Engineer for DAA GmbH"
             description = '''
                 Deutsche Auftragsagentur GmbH is a lead provider for specialized companies.
                 My job is to manage their whole cluster infrastructure and to work with the full stack of several PHP web applications.
             '''
 
-        [extra.jobs.freelance]
+        [extra.jobs.magnus]
             from = "March 2016"
             to = "November 2016"
             name = "Back-end developer for an art related app"
@@ -153,27 +161,27 @@ Hi! My name is Arne Beer.
 If you would ask me what I like doing most, my answer would probably be something like "Programming cool and useful stuff".
 
 Automation, optimization, neat setups, and useful tools always fascinated me.
-There's something incredibly satisfying in building something, that reduces one's workload and helps to optimize some process.
+There's something incredibly satisfying in building something that reduces one's workload and helps to optimize some process.
 Extra points for daemons and services that just work without any maintenance!
 In general, working with good tools is always a pleasure.
 
-That's probably one of the main reasons why I love open-source.
+This is probably one of the main reasons why I ended up in the open-source community.
 Your own tools and libraries get used and improved by other people, while you get a chance to use their work and to contribute to awesome projects.
 On top of that, it's great to see your projects being used by like-minded people.
 
-Professionally I work as a software engineer for more than 5 years, almost always on web-related projects.
-My usual field of expertise includes normal app development, DevOps, and Sysadmin.
-I'm not a big fan of only doing one of those, which is why I'm usually involved in all three wherever I work.
+Professionally I work as a software architect, with a focus on (but not limited to) web-related projects.
+My usual field of expertise includes backend development, DevOps, and the role of Sysadmin.
+I'm not a big fan of only doing one of these at a time, which is why I'm usually involved in all three wherever I work.
 Working on Servers and Pipelines is something I enjoy very much.
 However, doing some plain old feature-building can also be quite relaxing after a few days of DevOps work.
 
 During my previous jobs, I learned to appreciate a good team dynamic.
 It just makes work much more productive, enjoyable and the quality of each individual's work usually gets a lot better as well.
-It's something I don't want to miss in the future.
+It's something I don't want to miss in the future!
 
 I'm very interested in new technologies!
 For one, I'm fascinated by Rust and its rapidly developing ecosystem.
-Professionally working with a Rust tech stack is something that's planned for the near future!
+I currently have the pleasure to work with a Rust stack in a professional environment and I don't plan on abandoning this in the near future!
 
 Well, I think that's enough of me for now.
 
