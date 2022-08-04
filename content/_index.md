@@ -172,7 +172,7 @@ On top of that, it's great to see your projects being used by like-minded people
 Professionally I work as a software architect, with a focus on (but not limited to) web-related projects.
 My usual field of expertise includes backend development, DevOps, and the role of Sysadmin.
 I'm not a big fan of only doing one of these at a time, which is why I'm usually involved in all three wherever I work.
-Working on Servers and Pipelines is something I enjoy very much.
+Working on deployment setups and CI pipelines is something I enjoy very much.
 However, doing some plain old feature-building can also be quite relaxing after a few days of DevOps work.
 
 During my previous jobs, I learned to appreciate a good team dynamic.
