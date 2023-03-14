@@ -16,6 +16,7 @@ template = "index.html"
         ]
         "Python" = [
             { name = "SqlAlchemy", usages = "PostgreSQL, SQLite" },
+            { name = "FastAPI" },
             { name = "Flask + Ecosystem" },
             { name = "Telegram bots", usages = "Telethon, Python-telegram-bot" },
             { name = "Various self-build projects", usages = "Ultimate pollbot, Stickerfinder, Gitalizer, ..." },
@@ -23,13 +24,14 @@ template = "index.html"
         "Rust" = [
             { name = "Rocket & Actix-web" },
             { name = "SQLx", usages = "PostgreSQL" },
+            { name = "esp-rs", usages = "ESP32-S3" },
             { name = "Various self-build projects", usages = "Pueue, comfy-table, inter-struct, ..." },
         ]
         "Frontend" = [
+            { name = "Typescript" },
+            { name = "Tailwind" },
             { name = "React" },
-            { name = "Vue" },
-            { name = "Basic CSS3" },
-            { name = "Basic HTML5" },
+            { name = "Vue.js" },
         ]
         "Php" = [
             { name = "Symfony + Ecosystem"},
@@ -40,23 +42,23 @@ template = "index.html"
         [extra.jobs.freelance]
             from = "August 2021"
             to = "Now"
-            name = "Freelance."
-            description = "Consulting work for various clients. Focus on software architecture."
+            name = "Freelance Consultant"
+            description = "Consulting, greenfield software architecture and development work for various clients."
 
         [extra.jobs.daa]
             from = "March 2017"
             to = "July 2021"
-            name = "Senior DevOps Software Engineer for DAA GmbH"
+            name = "Senior Software Engineer for DAA GmbH"
             description = '''
                 Deutsche Auftragsagentur GmbH is a lead provider for specialized companies.
-                My job is to manage their whole cluster infrastructure and to work with the full stack of several PHP web applications.
+                I managed their cluster infrastructure and worked with the full stack of several PHP web applications.
             '''
 
         [extra.jobs.magnus]
             from = "March 2016"
             to = "November 2016"
             name = "Back-end developer for an art related app"
-            description = "Maintenance of a large existing code base, debugging of critical legacy bugs and development of new features in the full stack of an API back-end written in Python's Flask web-framework."
+            description = "Maintenance of a large existing code base, debugging of critical legacy bugs and development of new features for an API back-end using the Flask web-framework."
 
         [extra.jobs.sinnerschrader]
             from = "February 2015"
@@ -74,7 +76,7 @@ template = "index.html"
             from = "October 2013"
             to = "March 2014"
             name = "Research assistant for OLRC in association with UHH"
-            description = "Back-end Python developer for OLRC. A platform for online legal resource management developed for Kenya. Unfortunately the funding for the project has stopped."
+            description = "Back-end Python developer for OLRC. A platform for online legal resource management developed for Kenya. Unfortunately the funding for the project has stopped early."
 
     [extra.projects]
         [extra.projects.pueue]
@@ -86,7 +88,20 @@ template = "index.html"
                 It's basically a daemon, which executes shell commands in the background, allowing you to simply continue on your shell no matter how long that command takes.
                 <br>
                 <br>
-                Pueue comes with a lot of convenience features, such as a command queue, parallel tasks, multiple queues, notifications and more.
+                I'm super proud of this one and I consider it practically finished.
+            '''
+
+        [extra.projects.comfy_table]
+            name = "Comfy table"
+            link = "https://github.com/Nukesor/comfy-table"
+            short_description = 'Beatiful and simple tables on your terminal [rust, library, cli]'
+            description = '''
+                Comfy-table is a minimalistic Rust library to build beautiful terminal tables.
+                It's main unique feature is it's ability to dynamically wrap to the length of a given terminal.
+                <br>
+                <br>
+                This project is in a very polished and stable state and I consider it finished.
+                From the looks of the recent downloads and adoption, it also seems to have become the de-facto default library for terminal tables in Rust.
             '''
 
         [extra.projects.pollbot]
@@ -98,18 +113,7 @@ template = "index.html"
                 It features a rich management interface and allows you to easily share polls between many chats.
                 <br>
                 <br>
-                I'm hosting a free version, which is already used by more than half a million people.
-            '''
-
-        [extra.projects.comfy_table]
-            name = "Comfy table"
-            link = "https://github.com/Nukesor/comfy-table"
-            short_description = 'Beatiful and simple tables on your terminal [rust, library, cli]'
-            description = '''
-                Comfy-table is a minimalistic Rust library to build beautiful terminal tables.
-                It's main unique feature is it's ability to dynamically wrap to the length of a given terminal.
-                <br>
-                Comfy-table is considered stable, well documented and has about 95% test coverage, which includes property testing.
+                I'm <a href="https://telegram.me/ultimate_pollbot">hosting an instance</a> for free, which has already been used by more than 1.5 million people.
             '''
 
         [extra.projects.stickerfinder]
@@ -119,10 +123,10 @@ template = "index.html"
             description = '''
                 Since there existed no nice text search for stickers I decided to create an easy to use and practical sticker bot.
                 <br>
-                It features a full sticker search by tags, text, emoji and sticker set name/title, as well as OCR with tesseract for text detection.
-                All Users can discover new sets, add new ones and contribute by tagging untagged stickers.
+                It features a full sticker search by tags, text, emoji and sticker set name/title, as well as rudimentary OCR with tesseract for text detection.
+                Users can discover new sets, add new ones and contribute by tagging untagged stickers.
                 <br>
-                It also includes multi-language support, fuzzy search and is build with python-telegram-bot, SqlAlchemy and PostgreSQL as database solution.
+                It includes multi-language support, fuzzy search and is build with python-telegram-bot, SqlAlchemy and PostgreSQL as database solution.
             '''
 
         [extra.projects.lovetoys]
@@ -130,7 +134,9 @@ template = "index.html"
             link = "https://github.com/Lovetoys/lovetoys"
             short_description = 'A full-featured entity-component-system framework in Lua. [lua, library, gamedev]'
             description = '''
-                This is a project that grew over the past few years.
+                This is my very first open-source project, which a friend and I started in University.
+                <br>
+                <br>
                 It began as a simple piece of code in one of our games and became a stable library with 100% test coverage.
                 If you are up to game development with Lua and interested in using a handy ECS, check out the project and give it a try.
             '''
@@ -140,52 +146,37 @@ template = "index.html"
             link = "https://github.com/Nukesor/gitalizer"
             short_description = "A Git repository meta-data aggregator and data mining tool [python, tool, privacy]"
             description = '''
-                This project has been created for my bachelor thesis.
+                This is my bachelor thesis, which I'm actually quite proud of.
                 Gitalizer is a tool to evaluate the possibility of privacy intrusions through analysis of metadata from open source repositories.
+                <br>
+                <br>
+                It was super interesting to build such a large data aggregator and it was the first time I had to deal with tens of millions rows in a table.
             '''
-
-        [extra.projects.archivebot]
-            name = "Archivebot"
-            link = "https://github.com/Nukesor/archivebot"
-            short_description = "A bot for archiving media from chats inside of Telegram [python, tool, telegram]"
-            description = '''
-                A handy bot to download files from telegram chats to your server.
-                It features a full backup of all files posted in a chat and a continuous backup of incoming new media.
-                A zip archive can then be created and uploaded into the Telegram chat with a single command at any given time.
-            '''
-
 +++
 
-Hi! My name is Arne Beer.
+Most of my career was about working on web development projects, their associated infrastructure, and the team's DevOps setup.
+I worked with lots of different technologies, stacks, infrastructure paradigms, and weird development setups.
 
-If you would ask me what I like doing most, my answer would probably be something like "Programming cool and useful stuff".
+A few years ago, I decided to become a Freelance Consultant, as a few possibilities opened up, and so far it has been a blast!
 
-Automation, optimization, neat setups, and useful tools always fascinated me.
-There's something incredibly satisfying in building something that reduces one's workload and helps to optimize some process.
-Extra points for daemons and services that just work without any maintenance!
-In general, working with good tools is always a pleasure.
+My current focus is on systems programming, web development (back-end, SysOps, DevOps, a bit of front-end now and then), and software architecture.
+
+As for programming languages I prefer Rust and Python, in that order.
+I professionally work with Rust since two years in the scope of high-performance web servers and embedded software engineering.
+
+When I'm not working, I develop and maintain many open-source projects such as command-line tools, libraries, and chatbots.
+A few of them actually became quite popular. A list of the most prominent projects can be found at the <a href="#personal-projects">bottom of this page</a>.
+
+<h2>Interests</h2>
+
+I have a lot of fun using and building good tooling.
+There's something incredibly satisfying in optimizing some processes and seeing your projects being used by other people.
 
 This is probably one of the main reasons why I ended up in the open-source community.
-Your own tools and libraries get used and improved by other people, while you get a chance to use their work and to contribute to awesome projects.
-On top of that, it's great to see your projects being used by like-minded people.
-
-Professionally I work as a software architect, with a focus on (but not limited to) web-related projects.
-My usual field of expertise includes backend development, DevOps, and the role of Sysadmin.
-I'm not a big fan of only doing one of these at a time, which is why I'm usually involved in all three wherever I work.
-Working on deployment setups and CI pipelines is something I enjoy very much.
-However, doing some plain old feature-building can also be quite relaxing after a few days of DevOps work.
-
-During my previous jobs, I learned to appreciate a good team dynamic.
-It just makes work much more productive, enjoyable and the quality of each individual's work usually gets a lot better as well.
-It's something I don't want to miss in the future!
+People share their ideas and projects, while they continue to improve each other's projects!
 
 I'm very interested in new technologies!
-For one, I'm fascinated by Rust and its rapidly developing ecosystem.
-I currently have the pleasure to work with a Rust stack in a professional environment and I don't plan on abandoning this in the near future!
+For one, I'm fascinated by Rust and its rapidly developing and stabilizing ecosystem.
+As stated above, I currently have the pleasure to work with a Rust stack in a professional environment and I'll continue to do so if I can!
 
-Well, I think that's enough of me for now.
-
-I recommend you to check out my projects on [Github](https://github.com/nukesor).
-It's probably the best representation of my current interests and capabilities.
-
-Code doesn't lie.
+Well, I think that's enough introduction for now.

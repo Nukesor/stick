@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="preload" as="font" type='font/woff2' href='{{ get_url(path="fonts/fontawesome/fontawesome-webfont.woff2?v=4.3.0") }}'>
-        <link rel="preload" as="font" type='font/ttf' href='{{ get_url(path="fonts/roboto/Roboto-Regular.ttf", cachebust=true) }}'>
-        <link rel="preload" as="font" type='font/ttf' href='{{ get_url(path="fonts/roboto/Roboto-Medium.ttf", cachebust=true) }}'>
+        <link rel="preload" as="font" type='font/ttf' href='{{ get_url(path="fonts/roboto/Roboto-Regular.ttf") }}'>
+        <link rel="preload" as="font" type='font/ttf' href='{{ get_url(path="fonts/roboto/Roboto-Medium.ttf") }}'>
         <link rel="stylesheet" type='text/css' href="{{ get_url(path="main.css", cachebust=true) }}">
         <link rel="stylesheet" type='text/css' href='{{ get_url(path="fonts/fontawesome/font-awesome.min.css", cachebust=true) }}'>
     </head>
@@ -21,11 +21,11 @@
                     <div class="content">
                         <h1> About me, </h1>
                         <hr class="descriptionSeperator">
-                        <div class="main_text">
+                        <span class="main_text">
                             {% block content %}
                                 {{ section.content | safe }}
                             {% endblock content %}
-                        </div>
+                        </span>
                     </div>
                 </div>
                 <div class="contentSegment">
@@ -75,24 +75,25 @@
                         <ul class="contentList" >
                             <li>Rock climbing</li>
                             <li>Programming</li>
+                            <li>Amateur DnB DJ</li>
                         </ul>
                     </div>
                 </div>
                 <div class="contentSegment">
                     <div class="content">
-                        <h2>Employment History</h2>
+                        <h2>Professional History</h2>
                         {% for key, job in section.extra.jobs %}
                         <div class="project">
                             <div class="timePeriod">
                                 <span> {{ job.from }} –&nbsp;</span><span>{{ job.to }}</span>
                             </div>
-                            <div>
+                            <div style="width:100%">
                                 <div class="description">
                                     {{ job.name }}<br>
                                 </div>
-                                <div class="projectText">
+                                <span class="projectText">
                                     {{ job.description }}<br>
-                                </div>
+                                </span>
                             </div>
                         </div>
                         <hr class="projectDelimiter">
@@ -101,19 +102,19 @@
                 </div>
                 <div class="contentSegment">
                     <div class="content">
-                        <h2>Private Projects</h2>
+                        <h2 id="personal-projects">Personal Projects</h2>
                         {% for key, project in section.extra.projects %}
                         <div class="project">
                             <div class="projectLink">
                                 <a href="{{ project.link }}" class="button linkButton"> <i class="fa fa-git-square"></i> {{ project.name | safe }}</a>
                             </div>
-                            <div>
+                            <div style="width:100%">
                                 <div class="description">
                                     {{ project.short_description | safe }}
                                 </div>
-                                <div class="projectText">
+                                <span class="projectText">
                                     {{ project.description | safe }}
-                                </div>
+                                </span>
                             </div>
                         </div>
                         <hr class="projectDelimiter">
