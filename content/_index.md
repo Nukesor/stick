@@ -126,7 +126,19 @@ template = "index.html"
                 It features a full sticker search by tags, text, emoji and sticker set name/title, as well as rudimentary OCR with tesseract for text detection.
                 Users can discover new sets, add new ones and contribute by tagging untagged stickers.
                 <br>
-                It includes multi-language support, fuzzy search and is build with python-telegram-bot, SqlAlchemy and PostgreSQL as database solution.
+                It includes multi-language support, fuzzy search and is build with python-telegram-bot, SqlAlchemy and PostgreSQL.
+            '''
+
+        [extra.projects.gitalizer]
+            name = "Gitalizer"
+            link = "https://github.com/Nukesor/gitalizer"
+            short_description = "A Git repository meta-data aggregator and data mining tool [python, research, privacy]"
+            description = '''
+                This is my bachelor thesis, which I'm actually quite proud of.
+                Gitalizer is a tool to evaluate the possibility of privacy intrusions through analysis of metadata from open source repositories.
+                <br>
+                <br>
+                It was super interesting to build such a large data aggregator and it was the first time I had to deal with tens of million rows in a table.
             '''
 
         [extra.projects.lovetoys]
@@ -134,23 +146,11 @@ template = "index.html"
             link = "https://github.com/Lovetoys/lovetoys"
             short_description = 'A full-featured entity-component-system framework in Lua. [lua, library, gamedev]'
             description = '''
-                This is my very first open-source project, which a friend and I started in University.
+                This is my very first open-source project which a friend and I started in university.
                 <br>
                 <br>
                 It began as a simple piece of code in one of our games and became a stable library with 100% test coverage.
                 If you are up to game development with Lua and interested in using a handy ECS, check out the project and give it a try.
-            '''
-
-        [extra.projects.gitalizer]
-            name = "Gitalizer"
-            link = "https://github.com/Nukesor/gitalizer"
-            short_description = "A Git repository meta-data aggregator and data mining tool [python, tool, privacy]"
-            description = '''
-                This is my bachelor thesis, which I'm actually quite proud of.
-                Gitalizer is a tool to evaluate the possibility of privacy intrusions through analysis of metadata from open source repositories.
-                <br>
-                <br>
-                It was super interesting to build such a large data aggregator and it was the first time I had to deal with tens of millions rows in a table.
             '''
 +++
 
