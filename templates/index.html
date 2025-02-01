@@ -1,127 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
 
-        <link rel="preload" as="font" type='font/woff2' href='{{ get_url(path="fonts/fontawesome/fontawesome-webfont.woff2?v=4.3.0") }}'>
-        <link rel="preload" as="font" type='font/ttf' href='{{ get_url(path="fonts/roboto/Roboto-Regular.ttf") }}'>
-        <link rel="preload" as="font" type='font/ttf' href='{{ get_url(path="fonts/roboto/Roboto-Medium.ttf") }}'>
-        <link rel="stylesheet" type='text/css' href="{{ get_url(path="main.css", cachebust=true) }}">
-        <link rel="stylesheet" type='text/css' href='{{ get_url(path="fonts/fontawesome/font-awesome.min.css", cachebust=true) }}'>
-    </head>
-    <body>
-        <div class="borderWrapper">
-            <div class="contentWrapper">
-                <div class="headerName">
-                    <h1 class="firstname">Arne Christian Beer</h1>
-                </div>
-                <div class="header"></div>
-                <div class="contentSegment">
-                    <div class="content">
-                        <h1> About me, </h1>
-                        <hr class="descriptionSeperator">
-                        <span class="main_text">
-                            {% block content %}
-                                {{ section.content | safe }}
-                            {% endblock content %}
-                        </span>
-                    </div>
-                </div>
-                <div class="contentSegment">
-                    <div class="content skillsContentWrapper">
-                        <h2>Skills</h2>
-                        {% for name, technologies in section.extra.skills %}
-                        <div class="skillsContent">
-                            <div class="description">{{ name }}:</div>
-                            <ul>
-                                {% for technology in technologies %}
-                                <li>
-                                    <a class="techLink" {% if technology.link %}href="{{ technology.link }}"{% endif %}>
-                                        {{ technology.name }}
-                                        {% if technology.usages %} - <i>{{ technology.usages }}</i>{% endif %}
-                                    </a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="equalContentSegment">
-                    <div class="content">
-                        <h2>Contact</h2>
-                        <div class="contact" >
-                            <span class="contactElement">
-                                E-mail: <a href="mailto:public@arne.beer">public@arne.beer</a>
-                            </span>
-                            <span class="contactElement">
-                                LinkedIn: <a href="https://de.linkedin.com/in/arne-beer-661279113"> Arne Beer </a>
-                            </span>
-                            <span class="contactElement">
-                                GitHub: <a href="https://github.com/nukesor"> Nukesor </a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h2>Languages</h2>
-                        <ul class="contentList" >
-                            <li>German: Native speaker</li>
-                            <li>English: Fluent</li>
-                        </ul>
-                    </div>
-                    <div class="content">
-                        <h2>Hobbies</h2>
-                        <ul class="contentList" >
-                            <li>Rock climbing</li>
-                            <li>Programming</li>
-                            <li>Amateur DnB DJ</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="contentSegment">
-                    <div class="content">
-                        <h2>Professional History</h2>
-                        {% for key, job in section.extra.jobs %}
-                        <div class="project">
-                            <div class="timePeriod">
-                                <span> {{ job.from }} –&nbsp;</span><span>{{ job.to }}</span>
-                            </div>
-                            <div style="width:100%">
-                                <div class="description">
-                                    {{ job.name }}<br>
-                                </div>
-                                <span class="projectText">
-                                    {{ job.description }}<br>
-                                </span>
-                            </div>
-                        </div>
-                        <hr class="projectDelimiter">
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="contentSegment">
-                    <div class="content">
-                        <h2 id="personal-projects">Personal Projects</h2>
-                        {% for key, project in section.extra.projects %}
-                        <div class="project">
-                            <div class="projectLink">
-                                <a href="{{ project.link }}" class="button linkButton"> <i class="fa fa-git-square"></i> {{ project.name | safe }}</a>
-                            </div>
-                            <div style="width:100%">
-                                <div class="description">
-                                    {{ project.short_description | safe }}
-                                </div>
-                                <span class="projectText">
-                                    {{ project.description | safe }}
-                                </span>
-                            </div>
-                        </div>
-                        <hr class="projectDelimiter">
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="preload" as="font" type='font/woff2'
+    href='{{ get_url(path="fonts/fontawesome/fontawesome-webfont.woff2?v=4.3.0") }}'>
+  <link rel="preload" as="font" type='font/ttf' href='{{ get_url(path="fonts/roboto/Roboto-Regular.ttf") }}'>
+  <link rel="preload" as="font" type='font/ttf' href='{{ get_url(path="fonts/roboto/Roboto-Medium.ttf") }}'>
+  <link rel="stylesheet" type='text/css' href='{{ get_url(path="main.css", cachebust=true) }}'>
+  <link rel="stylesheet" type='text/css'
+    href='{{ get_url(path="fonts/fontawesome/font-awesome.min.css", cachebust=true) }}'>
+</head>
+
+<body>
+  <div class="borderWrapper">
+    <div class="contentWrapper">
+      <div class="headerName">
+        <h1 class="firstname">Arne Christian Beer</h1>
+      </div>
+      <div class="header"></div>
+      <div class="contentSegment">
+        <div class="content">
+          <h1> About me, </h1>
+          <hr class="descriptionSeperator">
+          <span class="main_text">
+            {% block content %}
+            {{ section.content | safe }}
+            {% endblock content %}
+          </span>
         </div>
-    </body>
+      </div>
+      <div class="contentSegment">
+        <div class="content skillsContentWrapper">
+          <h2>Skills</h2>
+          {% for name, technologies in section.extra.skills %}
+          <div class="skillsContent">
+            <div class="description">{{ name }}:</div>
+            <ul>
+              {% for technology in technologies %}
+              <li>
+                <a class="techLink" {% if technology.link %}href="{{ technology.link }}" {% endif %}>
+                  {{ technology.name }}
+                  {% if technology.usages %} - <i>{{ technology.usages }}</i>{% endif %}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="equalContentSegment">
+        <div class="content">
+          <h2>Contact</h2>
+          <div class="contact">
+            <span class="contactElement">
+              E-mail: <a href="mailto:public@arne.beer">public@arne.beer</a>
+            </span>
+            <span class="contactElement">
+              LinkedIn: <a href="https://de.linkedin.com/in/arne-beer-661279113"> Arne Beer </a>
+            </span>
+            <span class="contactElement">
+              GitHub: <a href="https://github.com/nukesor"> Nukesor </a>
+            </span>
+            <span class="contactElement">
+              <a rel="me" href="https://chaos.social/@Nukesor">Mastodon</a>
+            </span>
+          </div>
+        </div>
+        <div class="content">
+          <h2>Languages</h2>
+          <ul class="contentList">
+            <li>German: Native speaker</li>
+            <li>English: Fluent</li>
+          </ul>
+        </div>
+        <div class="content">
+          <h2>Hobbies</h2>
+          <ul class="contentList">
+            <li>Rock climbing</li>
+            <li>Programming</li>
+            <li>Amateur DnB DJ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contentSegment">
+        <div class="content">
+          <h2>Professional History</h2>
+          {% for key, job in section.extra.jobs %}
+          <div class="project">
+            <div class="timePeriod">
+              <span> {{ job.from }} –&nbsp;</span><span>{{ job.to }}</span>
+            </div>
+            <div style="width:100%">
+              <div class="description">
+                {{ job.name }}<br>
+              </div>
+              <span class="projectText">
+                {{ job.description }}<br>
+              </span>
+            </div>
+          </div>
+          <hr class="projectDelimiter">
+          {% endfor %}
+        </div>
+      </div>
+      <div class="contentSegment">
+        <div class="content">
+          <h2 id="personal-projects">Personal Projects</h2>
+          {% for key, project in section.extra.projects %}
+          <div class="project">
+            <div class="projectLink">
+              <a href="{{ project.link }}" class="button linkButton"> <i class="fa fa-git-square"></i> {{ project.name |
+                safe }}</a>
+            </div>
+            <div style="width:100%">
+              <div class="description">
+                {{ project.short_description | safe }}
+              </div>
+              <span class="projectText">
+                {{ project.description | safe }}
+              </span>
+            </div>
+          </div>
+          <hr class="projectDelimiter">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
