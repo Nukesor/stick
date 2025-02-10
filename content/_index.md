@@ -39,11 +39,22 @@ template = "index.html"
         ]
 
     [extra.jobs]
-        [extra.jobs.freelance]
-            from = "August 2021"
+        [extra.jobs.alpm]
+            from = "October 2024"
             to = "Now"
+            name = "Arch Linux Package Management (alpm-rs)"
+            description = "Work on the alpm-rs Arch Linux project, sponsored by the Sovereign Tech Fund (STF)."
+
+        [extra.jobs.elo]
+            from = "August 2021"
+            to = "September 2024"
             name = "Freelance Consultant"
-            description = "Consulting, greenfield software architecture and development work for various clients."
+            description = '''
+              Software architecture and development work for various clients.
+
+              Most notably, a greenfield product development for a fleet management system for instralogistic vehicles.
+              Architectural design and implementation on all parts of the stack, including backend, embedded systems, mobile app and infrastructure.
+            '''
 
         [extra.jobs.daa]
             from = "March 2017"
@@ -54,16 +65,16 @@ template = "index.html"
                 I managed their cluster infrastructure and worked with the full stack of several PHP web applications.
             '''
 
-        [extra.jobs.magnus]
+        [extra.jobs.artace]
             from = "March 2016"
             to = "November 2016"
-            name = "Back-end developer for an art related app"
+            name = "Freelance back-end developer for an art related app"
             description = "Maintenance of a large existing code base, debugging of critical legacy bugs and development of new features for an API back-end using the Flask web-framework."
 
         [extra.jobs.sinnerschrader]
             from = "February 2015"
             to = "March 2016"
-            name = "Back-end and front-end web developer for SinnerSchrader"
+            name = "Junior back-end and front-end web developer for SinnerSchrader"
             description = "Maintenance and development of features and prototypes for several of their projects including customers such as Comdirect, VW and others."
 
         [extra.jobs.ti_online]
@@ -162,7 +173,7 @@ A few years ago, I decided to become a Freelance Consultant, as a few possibilit
 My current focus is on systems programming, web development (back-end, SysOps, DevOps, a bit of front-end now and then), and software architecture.
 
 As for programming languages I prefer Rust and Python, in that order.
-I professionally work with Rust since two years in the scope of high-performance web servers and embedded software engineering.
+I professionally work with Rust since 2021 in the scope of high-performance web servers and embedded software engineering.
 
 When I'm not working, I develop and maintain many open-source projects such as command-line tools, libraries, and chatbots.
 A few of them actually became quite popular. A list of the most prominent projects can be found at the <a href="#personal-projects">bottom of this page</a>.
