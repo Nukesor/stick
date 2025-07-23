@@ -168,15 +168,15 @@ template = "index.html"
 Most of my career was about working on web development projects, their associated infrastructure, and the team's DevOps setup.
 I worked with lots of different technologies, stacks, infrastructure paradigms, and weird development setups.
 
-A few years ago, I decided to become a Freelance Consultant, as a few possibilities opened up, and so far it has been a blast!
+In 2021 I decided to become a Freelance Consultant, as a few possibilities opened up, and so far it has been a blast!
 
 My current focus is on systems programming, web development (back-end, SysOps, DevOps, a bit of front-end now and then), and software architecture.
 
-As for programming languages I prefer Rust and Python, in that order.
-I professionally work with Rust since 2021 in the scope of high-performance web servers and embedded software engineering.
+As for programming languages I prefer Rust, but I'm comfortable with Typescript, modern Python and PHP, and Lua.
+I professionally worked on multiple projects with Rust since 2021 in the scope of high-performance web servers, embedded software engineering and systems programming.
 
-When I'm not working, I develop and maintain many open-source projects such as command-line tools, libraries, and chatbots.
-A few of them actually became quite popular. A list of the most prominent projects can be found at the <a href="#personal-projects">bottom of this page</a>.
+When I'm not working, I develop and maintain a few open-source projects such as command-line tools, libraries, and chatbots.
+Some of them even became quite popular. A list of the most prominent projects can be found at the <a href="#personal-projects">bottom of this page</a>.
 
 <h2>Interests</h2>
 
